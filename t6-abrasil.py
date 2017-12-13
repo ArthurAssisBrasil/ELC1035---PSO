@@ -58,15 +58,15 @@ class T6abrasil(object):
                                 except:                                 
                                         jsonList.append({"data": {"ipv4": ipOrd[x], "country_name":"None" }})
                 else:
-                        for x in len(ipOrd):
+                        for x in ipOrd:
                                 try:
-                                        url = "https://ipvigilante.com/" + ipOrd[x]
+                                        url = "https://ipvigilante.com/" + x
                                         response = requests.get(url)
                                         response.raise_for_status()
                                         data = json.loads(response.text)
                                         jsonList.append(data)
                                 except:                                 
-                                        jsonList.append({"data": {"ipv4": ipOrd[x], "country_name":"None" }})        
+                                        jsonList.append({"data": {"ipv4": x, "country_name":"None" }})        
 
                 return jsonList
         
@@ -85,15 +85,15 @@ class T6abrasil(object):
                                 except:                                 
                                         jsonList.append({"data": {"ipv4": ipOrd[x], "country_name":"None" }})
                 else:
-                        for x in len(ipOrd):
+                        for x in ipOrd:
                                 try:
-                                        url = "https://ipvigilante.com/" + ipOrd[x]
+                                        url = "https://ipvigilante.com/" + x
                                         response = requests.get(url)
                                         response.raise_for_status()
                                         data = json.loads(response.text)
                                         jsonList.append(data)
                                 except:                                 
-                                        jsonList.append({"data": {"ipv4": ipOrd[x], "country_name":"None" }})        
+                                        jsonList.append({"data": {"ipv4": x, "country_name":"None" }})        
 
                 return jsonList
         
@@ -112,15 +112,15 @@ class T6abrasil(object):
                                 except:                                 
                                         jsonList.append({"data": {"ipv4": ipOrd[x], "country_name":"None" }})
                 else:
-                        for x in len(ipOrd):
+                        for x in ipOrd:
                                 try:
-                                        url = "https://ipvigilante.com/" + ipOrd[x]
+                                        url = "https://ipvigilante.com/" + x
                                         response = requests.get(url)
                                         response.raise_for_status()
                                         data = json.loads(response.text)
                                         jsonList.append(data)
                                 except:                                 
-                                        jsonList.append({"data": {"ipv4": ipOrd[x], "country_name":"None" }})
+                                        jsonList.append({"data": {"ipv4": x, "country_name":"None" }})
 
                 return jsonList
 
@@ -139,15 +139,15 @@ class T6abrasil(object):
                                 except:                                 
                                         jsonList.append({"data": {"ipv4": ipOrd[x], "country_name":"None" }})
                 else:
-                        for x in len(ipOrd):
+                        for x in ipOrd:
                                 try:
-                                        url = "https://ipvigilante.com/" + ipOrd[x]
+                                        url = "https://ipvigilante.com/" + x
                                         response = requests.get(url)
                                         response.raise_for_status()
                                         data = json.loads(response.text)
                                         jsonList.append(data)
                                 except:                                 
-                                        jsonList.append({"data": {"ipv4": ipOrd[x], "country_name":"None" }})
+                                        jsonList.append({"data": {"ipv4": x, "country_name":"None" }})
 
                 return jsonList
         
